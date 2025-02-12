@@ -1,0 +1,20 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ultron</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">nihaa21</property>
+
+        <!-- A Hibernate dialect is a class that helps Hibernate work with different databases by translating SQL.
+             It also maps Java data types to database data types, it is optional -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- The below code is used to show the sql and also format the query into proper format
+             by default these 2 values will be false -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+    </session-factory>
+</hibernate-configuration>
