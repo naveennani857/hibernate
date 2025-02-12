@@ -1,4 +1,4 @@
-package org.ultron;
+package com.ultron;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -24,7 +24,7 @@ public class Main {
 //        SessionFactory sessionFactory = cfg.buildSessionFactory();
         //We can write the above 4 lines in a  single line.
         SessionFactory sessionFactory = new Configuration()
-                .addAnnotatedClass(org.ultron.Employee.class)
+                .addAnnotatedClass(Employee.class)
                 .configure()
                 .buildSessionFactory();    // rich resource, has to close or present in try with resource
 

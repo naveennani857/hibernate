@@ -1,4 +1,4 @@
-package org.ultron;
+package com.ultron;
 
 import jakarta.persistence.Embeddable;
 
